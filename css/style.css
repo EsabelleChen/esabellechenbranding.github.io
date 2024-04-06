@@ -1,0 +1,330 @@
+ @media (max-width: 800px) {
+        heading {color: orange;}
+    }
+
+    @media (min-width: 801px) {
+        heading {color:orange;}
+    }
+    @media (min-width: 1200px) {
+        heading {color:orange;}
+    }
+
+img {
+			width: 30vw;
+			height: auto;
+		}
+
+h1 {
+          
+			font-family: sans-serif;
+			font-weight: 400rem;
+            font-size: 600%;
+			}
+
+@font-face {
+    font-family: pprightserif-compactdark;
+    src: url('fonts/pprightserif-compactdark.woff');
+}
+@font-face {
+    font-family: ppfraktionmono-regular;
+    src: url('fonts/ppfraktionmono-regular.woff');
+
+}
+
+heading {    font-family:pprightserif-compactdark, serif;
+            font-weight: 500rem;
+            font-size: 800%;
+
+}
+
+p {
+			padding: 6rem;
+			font-family: sans-serif;
+            font-size: 1rem;
+		}
+h2 {
+			padding-left: 1%;
+            font-family: sans-serif;
+			font-size: 2rem;}
+
+h3 {
+            font-family: pprightserif-compactdark, serif;
+            margin: 3rem;
+            padding: 2%;
+            font-weight: 500rem;
+            font-size: 2rem}
+
+button {padding: 1rem;
+    font-family: pprightserif-compactdark;
+    text-decoration: none;
+    background-color: whitesmoke;
+    font-size: 20px;
+    margin-bottom: 1rem;
+
+
+        }
+hover {cursor: pointer;}
+
+ul {list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+nav a {
+  text-decoration: none;
+
+   
+    padding: 1%;
+    font-family: sans-serif;
+    background-color: white;
+    border: 0;
+    line-height: 3rem;
+    white-space: nowrap;
+    font-size: 15px; 
+}
+
+a:link {color: black;}
+a:visited {color: black;}
+a:hover {
+        transiton: 1s;
+        background-color: khaki;
+        padding: 1%;
+        border-radius: 10px}
+
+a.two {
+  text-decoration: none;
+  
+    padding: 1%;
+    font-family: sans-serif;
+    background-color: white;
+    border: 0;
+    line-height: 3rem;
+    white-space: nowrap; 
+}
+
+a.two:link {color: black;}
+a.two:visited {color: black;}
+a.two:hover {color: black;
+        transiton: 1s;
+        background-color: hotpink;
+        padding: 1%;
+        border-radius: 10px}
+
+a.three:link {color: black}
+a.three:{color: white;
+            }
+
+a.four:link {color: white}
+a.four: {color: khaki;
+            }
+
+a.five:hover {color: black;
+    background-color: orange;
+    padding: 0;
+    border-radius: 0;
+}
+a.six:hover {
+    background-color: white;
+    color: orange;
+    padding: 0}
+a.six {font-family: sans-serif;
+    color: black;
+    text-decoration-line: none;
+    margin: 5px 0;
+}
+a.seven:hover {
+    background-color: transparent;
+    padding: 0;
+    color: transparent;
+    margin: 0;
+    border-radius: 0;
+}
+
+/* work page grid is acting strange. Took away figcaption to clean it up but the responsiveness is still weird*/
+
+.grid-container {
+  display: grid;
+  /* auto auto auto means three columns */
+  grid-template-columns: auto auto auto;
+  grid-template-rows: masonry;
+  gap: 5px;
+   /* turn off outlines
+  background-color: #2196F3; */ 
+  padding: 0px;
+  margin-left: 5rem;
+
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 0px;
+  font-size: 2rem;;
+}
+
+.item1 {
+  grid-row-start: 1;
+
+}
+.item1:hover {
+    opacity: 50%;
+    background-color: none;
+}
+.item2:hover {
+    opacity: 50%;
+    background-color: none;
+}
+.item3:hover {
+    opacity: 50%;
+    background-color: none;
+}
+.item4:hover {
+    opacity: 50%;
+}
+.item5:hover {
+    opacity: 50%;
+}
+.item6:hover {
+    opacity: 50%;
+}
+.item7:hover {
+    opacity: 50%;
+}
+.item8:hover {
+    opacity: 50%;
+}
+
+div.relative {
+  position: relative;
+
+}
+/*Code lines 193-208 taken from Chris Lange's Github*/
+
+/* Responsive layout - makes a two column-layout instead of a three-column layout */
+@media (max-width: 800px) {
+.grid-container {
+  display: grid;
+  /* auto auto means two columns */
+  grid-template-columns: auto auto;
+  gap: 5px;
+  padding: 0px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 0px ;
+  font-size: 30px;
+}
+
+
+}
+div.pageheader {
+    transform: rotate(-90deg);
+    position: fixed;
+  margin: -5rem;
+  margin-block-start: 2rem;
+
+}
+div.aboutmeheader {
+    transform: rotate(-90deg);
+    position: fixed;
+    z-index: -5;
+    margin: -10rem;
+    margin-block-start: 6rem;
+    font-size: 90%;
+
+}
+div.contactheader {
+    transform: rotate(-90deg);
+    position: fixed;
+    z-index: -5;
+    margin: -7rem;
+    margin-block-start: 6rem;
+    font-size: 100%;}
+
+    
+p {
+    font-size: 12pts;
+}
+ 
+
+.footer {
+    font-size: 20pts;
+    color: black;
+    padding: 1rem;
+}
+
+
+
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: auto;
+    padding: 10px;
+    height: 600px;
+}
+
+.image-container img {
+    width: auto;
+    height: 100%;
+    margin-right: 10px; /* Add space between images */
+}
+@media (max-width: 800px) {
+.image-container {
+ 
+ columns: auto; /*??Not really understanding how to make my images responsive and become one column in on small device. */
+  gap: 5px;
+  padding: 0px;
+}
+
+
+
+
+.products {
+    font-size: 1.2em;
+    line-height: 125%;
+    padding-top: 5rem;
+}
+
+.products-2 {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    font-size: 1.5em;
+    line-height: 125%;
+}
+
+
+
+/*this code is taken from Chris Lange's Github*/
+
+/*ficaption can be pretty neat. it's a default html tag to position captions under figures (images). accessibility: screen readers like images as figures. */
+figcaption {
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: slategrey;
+    text-transform: uppercase;
+}
+
+/*
+- ensured quotation marks are smart not straight! 
+ref: https://css-tricks.com/almanac/properties/q/quotes/
+and offset: ref: https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/*/
+blockquote {
+  font-style: italic;
+  text-indent: -0.45em;
+  quotes: "“" "”" "‘" "’";
+
+}
+blockquote::before {
+    content: open-quote;
+}
+blockquote::after {
+    content: close-quote;
+}
+
+/* how to make a dropshadow 
+ref: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow */
+
+
+
